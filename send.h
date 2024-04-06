@@ -4,7 +4,9 @@
 #include <stdio.h>    
 #include <wiringPi.h> 
 
-#define LED1 2
+#define OPEN 2  //GPIO2
+#define CLOSE 3
+#define LOCK 4
 
 void init_gpio(void);
 

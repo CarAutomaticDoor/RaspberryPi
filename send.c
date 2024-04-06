@@ -1,4 +1,4 @@
-#include "led.h"
+#include "send.h"
 
 #include <stdio.h>    
 #include <wiringPi.h> 
@@ -9,5 +9,7 @@ void init_gpio(void) {
         return;                                
     }
 
-    pinMode(LED1, OUTPUT);
+    pinMode(OPEN, OUTPUT);
+    pinMode(CLOSE, OUTPUT);
+    pinMode(LOCK, OUTPUT);
 }
