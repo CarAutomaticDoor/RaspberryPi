@@ -204,7 +204,7 @@ char * read_server(int client) {
     // read data from the client
     int bytes_read = read(client, input, sizeof(input));
     if (bytes_read > 0) {
-        printf("received : %s", input);
+        // printf("received : %s", input);
         return input;
     } else {
         return NULL;
@@ -218,6 +218,6 @@ void write_server(int client, char *message) {
 
     bytes_sent = write(client, messageArr, strlen(messageArr));
     if (bytes_sent > 0) {
-        printf("sent : %s", messageArr);
+        // printf("sent : %s", messageArr);
     }
 }
